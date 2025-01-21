@@ -18,7 +18,7 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #7a6960; /* Color for headings, subheadings and title throughout the website */
@@ -163,9 +163,9 @@ h6 {
 .header .logo h1 {
   font-size: 30px;
   margin: 0;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 2px;
-  color: var(--heading-color);
+  color: var(--accent-color);
 }
 
 .header .btn-getstarted,
@@ -228,7 +228,7 @@ h6 {
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
-    font-weight: 400;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
