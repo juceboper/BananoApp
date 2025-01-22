@@ -1,24 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { TodosComponent } from './todos/todos.component';
-import { Amplify } from 'aws-amplify';
-import outputs from '../../amplify_outputs.json';
-import { AmplifyAuthenticatorModule, AuthenticatorService } from '@aws-amplify/ui-angular';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { routes } from './app.routes';
+import { HeaderComponent } from './general/header/header.component';
+import { FooterComponent } from './general/footer/footer.component';
 
-Amplify.configure(outputs);
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, TodosComponent, AmplifyAuthenticatorModule],
+  imports: [RouterModule, HeaderComponent, FooterComponent],
 })
 export class AppComponent {
-  title = 'amplify-angular-template';
-
-
-  constructor(public authenticator: AuthenticatorService) {
-    Amplify.configure(outputs);
-  }
 }

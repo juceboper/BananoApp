@@ -1,18 +1,18 @@
-<!--&lt;!&ndash; todos.component.html &ndash;&gt;-->
-<!--<main>-->
-<!--    <h1>My todos</h1>-->
-<!--    <button (click)="createTodo()">+ new</button>-->
-<!--    <ul>-->
-<!--        <li -->
-<!--            *ngFor="let todo of todos;">-->
-<!--            {{ todo.content }}-->
-<!--        </li>-->
-<!--    </ul>-->
-<!--    <div>-->
-<!--        🥳 App successfully hosted. Try creating a new todo.-->
-<!--        <br />-->
-<!--        <a href="https://docs.amplify.aws/gen2/start/quickstart/">-->
-<!--            Review next steps of this tutorial.-->
-<!--        </a>-->
-<!--    </div>-->
-<!--</main>-->
+<!-- todos.component.html -->
+<main>
+    <h1>My todos</h1>
+    <button (click)="createTodo()">+ new</button>
+    <ul>
+        <li
+            *ngFor="let todo of todos;">
+            {{ todo.content }}
+        </li>
+    </ul>
+    <div>
+        🥳 App successfully hosted. Try creating a new todo.
+        <br />
+        <a href="https://docs.amplify.aws/gen2/start/quickstart/">
+            Review next steps of this tutorial.
+        </a>
+    </div>
+</main>
