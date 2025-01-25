@@ -14,7 +14,6 @@ const schema = a.schema({
     .authorization((allow) => [allow.publicApiKey()]),
   Banano: a
     .model({
-      idBanano: a.string(),
       Nombres: a.string(),
       Apellidos: a.string(),
       Ciudad: a.string(),
@@ -26,7 +25,6 @@ const schema = a.schema({
 
   Colaborador: a
     .model({
-      idColaborador: a.string(),
       Nombres: a.string(),
       Apellidos: a.string(),
       Correo: a.string(),
@@ -35,7 +33,6 @@ const schema = a.schema({
 
   HistorialBanano: a
     .model({
-      idHistorial: a.string(),
       idBanano: a.string(),
       idColaborador: a.string(),
       fechaReporte: a.string(),
